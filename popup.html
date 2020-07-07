@@ -4,7 +4,8 @@
 <p>Use Ctrl+Space to paste this text on focused input: </p>
 
 <input id="text-input" type="text" placeholder="text to print" />
-<input id='updateemoji' type='button' value='update' />
+
+<script src="jquery.min.js"></script>
 <script src='popup.js'></script>
 
 <style>
@@ -14,7 +15,6 @@
     
     h2 {
         font-size: 25px;
-        ;
         color: #333333;
         margin: 5px;
         text-align-last: center;
@@ -25,31 +25,15 @@
         margin: 3px;
     }
     
-    input{
+    input {
         outline: none;
         margin: 1px;
         border: none;
     }
     
     input[type=text] {
-
         padding: 3px;
-
         border-bottom: 1px solid #333333;
         background: #eeeeee;
-    }
-    
-    input[type=button] {
-
-        background-color: white;
-        color: black;
-        border: 2px solid #555555;
-        transition: 0.2s;
-    }
-    
-    input[type=button]:hover {
-        background-color: #555555;
-        color: white;
-        cursor: pointer;
     }
 </style>
